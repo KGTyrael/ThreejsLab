@@ -26,7 +26,7 @@ node ./dist/server/server.js
 tsc -p src/server/ -w
 
 //install nodemon for auto restart server after hot compile
-npm install nodemon --save-dev [-g]
+npm install nodemon --save-dev -g
 //run nodemon(npx nodemon ./dist/server/server.js for local)
 nodemon ./dist/server/server.js
 
