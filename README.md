@@ -4,6 +4,8 @@
 npm install -g typescript
 npm init
 npm install three
+//for dat.gui 将文件index.d.ts从node_modules/@types/dat.gui文件夹复制到文件node_modules/three/examples/jsm/libs夹中，并将其重命名为dat.gui.module.d.ts。
+npm install @types/dat.gui
 
 //for http/path module in server.ts
 npm install @types/node 
