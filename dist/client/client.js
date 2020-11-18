@@ -1,7 +1,7 @@
 import * as THREE from '/build/three.module.js';
 import { OrbitControls } from '/jsm/controls/OrbitControls';
 import { GLTFLoader } from '/jsm/loaders/GLTFLoader';
-import Stats from '/jsm/libs/stats.module';
+//import Stats from '/jsm/libs/stats.module'
 const scene = new THREE.Scene();
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
@@ -14,13 +14,6 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
-// const material = new THREE.LineBasicMaterial({ color: 0xff0000 });
-// const points = new Array();
-// points.push( new THREE.Vector3( 0, 0, 0 ) );
-// points.push( new THREE.Vector3( 0, 0, .25 ) );
-// const geometry = new THREE.BufferGeometry().setFromPoints( points );
-// const line = new THREE.Line( geometry, material );
-// scene.add( line );
 var arrowHelper = new THREE.ArrowHelper(new THREE.Vector3(), new THREE.Vector3(), .25, 0xffff00);
 scene.add(arrowHelper);
 const material = new THREE.MeshNormalMaterial();
