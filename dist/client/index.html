@@ -36,12 +36,16 @@
 			-webkit-user-select	: none;
 			-moz-user-select	: none;
 		}
+        .c {
+            width: 200px;
+            height: 200px;
+        }
 		</style>
 </head>
 
 <body>
     <script type="module" src="client.js"></script>
-
+    <canvas id ="c1" class ="c"></canvas>
     <div id="container"></div>
     <div id="info">
         <a href="http://learningthreejs.com/blog/2011/12/26/let-s-make-a-3d-game-virtual-joystick/" target="_blank">VirtualJoystick.js</a>
@@ -63,7 +67,7 @@
         console.log("touchscreen is", VirtualJoystick.touchScreenAvailable() ? "available" : "not available");
         var joystick	= new VirtualJoystick({
             container	: document.getElementById('container'),
-            //mouseSupport	: true
+            mouseSupport	: true
         });
         setInterval(function(){
             var outputEl	= document.getElementById('result');

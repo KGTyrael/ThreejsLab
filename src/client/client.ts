@@ -5,8 +5,8 @@ import Stats from '/jsm/libs/stats.module'
 const scene: THREE.Scene = new THREE.Scene()
 
 const camera: THREE.PerspectiveCamera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-
-const renderer: THREE.WebGLRenderer = new THREE.WebGLRenderer()
+const canvas1:HTMLCanvasElement=<HTMLCanvasElement>document.getElementById("c1")
+const renderer: THREE.WebGLRenderer = new THREE.WebGLRenderer({canvas:canvas1})
 renderer.setSize(window.innerWidth, window.innerHeight)
 document.body.appendChild(renderer.domElement)
 
